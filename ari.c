@@ -1,3 +1,6 @@
+#include<stdio.h>
+#include<cs50.h>
+#include<string.h>
 int letter_count(string s)
 {
 	int l= strlen(s);
