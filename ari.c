@@ -1,13 +1,14 @@
 #include<stdio.h>
 #include<cs50.h>
 #include<string.h>
+#include<ctype.h>
 int letter_count(string s)
 {
 	int l= strlen(s);
 	int num_letters=0;
 	for(int i=0; i<l; i++)
 	{
-	if('A'<=s[i]&&s[i]<='Z'||'a'<=s[i]&&s[i]<='z'||'0'<=s[i]&&s[i]<='9')
+	if(isalnum(s[i]))
 	{
 		num_letters++;
 	}
